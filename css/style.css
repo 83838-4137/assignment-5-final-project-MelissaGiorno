@@ -49,14 +49,41 @@ h1{
     background-color: white;
     font-family: 'Tenor Sans', sans-serif;
     font-size: 1rem;
-    text text-decoration: none;
+    text-decoration: none;
   }
+
+  .nav{
+    position: fixed;
+    top: 100%;
+    background-color: white;
+    width: 100%;
+    left: 0;
+    transform: translateX(-100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   }
+   .nav ul{
+    flex-direction: column;
+    align-items: center;
+   }
+   .nav a{
+    font-size: 1.5rem;
+   }
+  
+.container{
+  background-color:#0C0E3D;
+  width: 400px; height:200px; margin:0 auto;
+}
 
   .bars{
       background-color:#0C0E3D;
       width: 26px;
       height: 3px;
       margin:5px 0;
+      transition: all .3s ease-in-out;
    }
 
    .hamburgerMenu{
@@ -68,41 +95,16 @@ h1{
     left: 50% !important;
   }
 
-  /* Media Query */
+  .hamburgerMenu--toggle .bars:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
 
-  @media (max-width: 468px) {}
-    .header { 
-      flex-direction: row;
-      justify-content: space-between;
-      height: 100px;
-   }
-  
-
-   .nav{
-    position: fixed;
-    top: 100%;
-    background-color: white;
-    width: 100%;
-    left: 0;
-    transform: translateX(-100%);
-
-   }
-   .nav ul{
-    flex-direction: column;
-    align-items: center;
-   }
-   .nav a{
-    font-size: 1.5rem;
-   }
-  
-
-
-
-
-.container{
-  background-color:#0C0E3D;
-  width: 400px; height:200px; margin:0 auto;
-}
+  .hamburgerMenu--toggle .bars:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburgerMenu--toggle .bars:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
 
 /*buttons*/
 button {
@@ -112,7 +114,6 @@ font-size: 1rem;
   padding: 1rem;
   border-radius: 4.875rem;
   display: flex;
-  margin: ;
   border: white;
 }
 
@@ -124,6 +125,7 @@ font-size: 1rem;
 .orderonline {
   background-color: #0C0E3D ;
   color: white;
+
 }
 
 .reservations {
@@ -141,8 +143,9 @@ font-size: 1rem;
 
 .footer{
   background-color:#0C0E3D;
-  justify-content: center;
   display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: 'Arsenal', sans-serif;
   color: white;
   font-size: 1rem;
