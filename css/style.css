@@ -12,6 +12,7 @@ body{
   font-size: 1rem;
   background-color:#0C0E3D;
   color: white;
+  margin: 0;
 }
 
 h1{
@@ -118,25 +119,49 @@ font-size: 1rem;
 }
 
 .reservationActions{
-  position: absolute;
+  position: relative;
   align-items: center;
   bottom: 0%;
 }
-.orderonline {
+
+.topbuttons {
+display: block;
+  width: 95%;
+  padding:12px;
+  cursor: pointer;
   background-color: #0C0E3D ;
   color: white;
-
+  position: absolute;
+  top:66%;
+  border: solid 1px white;
 }
-
-.reservations {
+.topbuttons:hover{
+background-color: #1C75BC; 
+}
+.bottombuttons {
+  display: block;
+  width: 95%;
+  padding:12px;
+  cursor: pointer;
   background-color: #0C0E3D ;
   color: white;
+  position: absolute;
+  top:82%;
+  border: solid 1px white;
   }
+  .bottombuttons:hover{
+    background-color: #1C75BC; 
+    }
 
   .submit {
     background-color: white;
     color:  #0C0E3D;
+    display: flex;
+    flex: row;
     }
+    .submit:hover{
+      background-color: #1C75BC; 
+      }
 
 
 
