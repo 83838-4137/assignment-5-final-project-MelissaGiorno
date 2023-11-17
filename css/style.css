@@ -10,19 +10,46 @@ html{
 body{
   font-family: 'Tenor Sans', sans-serif;
   font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
   background-color:#0C0E3D;
   color: white;
   margin: 0;
+
+
 }
 
 h1{
-  font-family: 'Dancing Script', cursive;
+font-family: 'Dancing Script';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 48px;
+color: #FFFFFF;
+padding-top: 10px;
+padding-right: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+  
 }
   p {
-    font-size: 1rem;
-    font-family: 'Arsenal', sans-serif;
+font-size: 1rem;
+font-family: 'Arsenal', sans-serif;
+
+left: 20px;
+top: 647px;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+padding-right: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+}
       
-  }
+  
   
 .header {
   background-color:white;
@@ -34,26 +61,15 @@ h1{
 }
 .logo {
   display: flex;
+ 
 }
 .logo img {
   width: 100%;
+justify-content: left;
 }
 
-.nav {
-  transition: all .3s ease-in-out;
-}
-
-.nav ul {
-  display: flex;
-}
-  .nav a{
-    background-color: white;
-    font-family: 'Tenor Sans', sans-serif;
-    font-size: 1rem;
-    text-decoration: none;
-  }
-
-  .nav{
+  .nav {
+    transition: all .3s ease-in-out;
     position: fixed;
     top: 100%;
     background-color: white;
@@ -64,16 +80,15 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 
    }
-   .nav ul{
+   .nav ul {
     flex-direction: column;
+    display: flex;
     align-items: center;
    }
-   .nav a{
-    font-size: 1.5rem;
-   }
-  
+
 .container{
   background-color:#0C0E3D;
   width: 400px; height:200px; margin:0 auto;
@@ -90,6 +105,7 @@ h1{
    .hamburgerMenu{
     display: block;
    }
+  
 
   /* JavaScript */
   .nav--toggle {
@@ -116,6 +132,10 @@ font-size: 1rem;
   border-radius: 4.875rem;
   display: flex;
   border: white;
+  width: 278px;
+height: 44px;
+left: 56px;
+top: 468px;
 }
 
 .reservationActions{
@@ -126,7 +146,6 @@ font-size: 1rem;
 
 .topbuttons {
 display: block;
-  width: 95%;
   padding:12px;
   cursor: pointer;
   background-color: #0C0E3D ;
@@ -134,13 +153,15 @@ display: block;
   position: absolute;
   top:66%;
   border: solid 1px white;
+  
 }
 .topbuttons:hover{
 background-color: #1C75BC; 
 }
 .bottombuttons {
   display: block;
-  width: 95%;
+  position: absolute;
+
   padding:12px;
   cursor: pointer;
   background-color: #0C0E3D ;
@@ -154,24 +175,97 @@ background-color: #1C75BC;
     }
 
   .submit {
-    background-color: white;
-    color:  #0C0E3D;
-    display: flex;
-    flex: row;
+background-color: white;
+display: flex;
+flex-direction: row;
+width: 102px;
+height: 44px;
+left: 264px;
+top: 1270px;
+font-family: 'Tenor Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+justify-content: center;
+text-transform: uppercase;
+color: #0C0E3D;
+
+
     }
     .submit:hover{
       background-color: #1C75BC; 
       }
 
+.book {
+background-color: white;
+display: flex;
+flex-direction: row;
+font-family: 'Tenor Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 16px;
+justify-content: center;
+cursor: pointer;
+position: absolute;
 
+}     
 
-
-.footer{
-  background-color:#0C0E3D;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Arsenal', sans-serif;
-  color: white;
-  font-size: 1rem;
+/*forms*/
+input[type=text], input[type=hidden] select[type=select]{
+  padding: 1rem;
+  margin:0%;
+  border-radius: 8px;
+  background-color: white;
+  color: #0C0E3D;
+  border: none;
 }
+input {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid white;
+  background-color: #0C0E3D;
+  width: 221px;
+  padding-left: 10px;
+  }
+
+  /*iframe*/
+  iframe:focus {
+    outline:hsl(from grey h s l)
+    
+  }
+  iframe[seamless] {
+    display: block;
+  }
+
+footer{
+align-items: center;
+left: calc(50% - 358px/2);
+top: 1352px;
+font-family: 'Arsenal';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+text-align: center;
+background-color:#0C0E3D;
+color: #FFFFFF;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+p {
+  margin: 0;
+}
+  /*gallery*/
+.row {
+  padding: 15px;
+}
+
+
+
+
+
+
+
+
