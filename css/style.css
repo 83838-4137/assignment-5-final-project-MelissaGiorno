@@ -305,7 +305,6 @@ a {
 a:hover {
   color: #1C75BC ;
 }
- 
 
   /*iframe*/
   iframe:focus {
@@ -350,6 +349,7 @@ p {
 .row-choice{
   display:flex;
 }
+
 
   .menu-item{
   padding-left: 5%;
