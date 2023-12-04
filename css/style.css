@@ -299,7 +299,8 @@ input {
   gap: 12px;
 }
 
-
+a {
+  color: white;
 }
 a:hover {
   color: #1C75BC ;
