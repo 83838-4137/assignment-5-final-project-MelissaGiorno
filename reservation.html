@@ -31,46 +31,67 @@
   <div class="bars"></div>
 </div>
 </header>
+<script src="js/script.js"></script>
 
 
 
 
-
-<h1>Reservations </h1>
-  <p>Coming in for a special occasion? Select your details and we'll try to get the best seats for you!</p>
+<h1 class="menu-header">
+  Reservations
+  </h1>
+<p class="reviewer">
+  Coming in for a special occasion? Select your details and we'll try to get the best seats for you!</p>
 
 <form action="request.html" method="get">
   <input type="hidden" name="hidden" value="secret hidden
    value">
-   <p>Party Size <input type="text" name="partysize" value=""placeholder="4 guests" required>
-    <select name="guests" type="text">
+   <div class="column">
+   Party Size<input type="party" name="partysize" value=""placeholder="4 guests" required>
+  
+<br>
+    Date<input type="date" name="date" value=""placeholder="10/23/2024" required>
+<br>
+    Time<input id="7:00pm" type="7" name="time" value=""placeholder="7:00PM" required>
+    
+<br>
+    <textarea name="comments" value=""placeholder="Comments" required></textarea>
 
-    <p>Date<input type="text" name="partysize"value=""placeholder="10/23/2024" required>
-    <p>Time<input type="text" name="partysize" value=""placeholder="7:00PM" required>
-    <p><input type="text" name="partysize" value=""placeholder="Comments" required>
+   </div>
+<br>
+   <button type="book"
+   class="book">FIND A TABLE</button>
 </form>
 
-  
-  <button type="book"
-  class="book">FIND A TABLE</button>
-    </form>
+  <br>
+
+
 
   <a href="#"><img src="images/mussels.png" alt="mussels" class="mussels"></a>
+  <br>
 
-  <p>
-    Subscribe to our newsletter for updates and special deals. </p>
+    <p>
+      Subscribe to our newsletter for updates and special deals. </p>
+      <div>
+        <form action="subscribe.html" method="get">
+          <input type="hidden" name="Subscribe" value="secret hidden
+           value">
 
-  <div class="column">
-    <form action="subscribe.html" method="get">
-      <input type="hidden" name="Subscribe" value="secret hidden
-       value">
-    <label for="email">Email</label>
-      <input id="email" name="email" type="text"
-      placeholder="Email" required> 
+           <div class="column">
+  
 
-  <button type="submit"
-  class="submit">SUBMIT</button>
-    </form>
+        <label for="email">Email</label>
+          <input id="email" name="email" type="email"
+          placeholder="Email" required> 
+    
+      <button type="submit"
+      class="submit">SUBMIT</button>
+        </div>
+        </form>
+      </div>
+      <br>
+  
+       
+
 <hr>
 <footer> 
   <p>Viale Pasitea 172</p>
@@ -87,5 +108,4 @@
 
 </footer>
 </body>
-<script src="js/script.js"></script>
 </html>
