@@ -14,7 +14,7 @@
 <body>
 <header class="header">
 <h1 class="logo">
-  <a href="#"><img src="images/logo.svg" alt="logo" class="logo_img"></a>
+  <a href="#"><img src="images/logo.svg" alt="logo" class="logo img"></a>
   </h1>
 <nav class="nav">
   <ul>
@@ -40,26 +40,29 @@
   Reservations
   </h1>
 <p class="reviewer">
-  Coming in for a special occasion? Select your details and we'll try to get the best seats for you!</p>
+  Coming in for a special occasion? <br> Select your details and we'll try to get <br> the best seats for you!</p>
 
 <form action="request.html" method="get">
-  <input type="hidden" name="hidden" value="secret hidden
-   value">
+  <input type="hidden" name="hidden" >
    <div class="column">
-   Party Size<input type="party" name="partysize" value=""placeholder="4 guests" required>
+   Party Size<input type="party" name="partysize" placeholder="4 guests" required>
   
 <br>
-    Date<input type="date" name="date" value=""placeholder="10/23/2024" required>
+    Date<input type="date" name="date" placeholder="10/23/2024" required>
 <br>
-    Time<input id="7:00pm" type="7" name="time" value=""placeholder="7:00PM" required>
+    Time<input type="time" name="time" placeholder="7:00PM" required>
     
 <br>
     <textarea name="comments" value=""placeholder="Comments" required></textarea>
 
    </div>
 <br>
-   <button type="book"
-   class="book">FIND A TABLE</button>
+
+<div class="button">
+<button type="button"
+class="button">FIND A TABLE</button>
+  </div>
+
 </form>
 
   <br>
@@ -69,23 +72,25 @@
   <a href="#"><img src="images/mussels.png" alt="mussels" class="mussels"></a>
   <br>
 
-    <p>
-      Subscribe to our newsletter for updates and special deals. </p>
-      <div>
-        <form action="subscribe.html" method="get">
-          <input type="hidden" name="Subscribe" value="secret hidden
-           value">
-
-           <div class="column">
+  <p>
+    Subscribe to our newsletter 
+    <br> for updates and special deals. </p>
+    <div>
+      <form action="subscribe.html" method="get">
+        <input type="hidden" name="Subscribe" value="secret hidden
+         value">
   
-
-        <label for="email">Email</label>
-          <input id="email" name="email" type="email"
-          placeholder="Email" required> 
-    
-      <button type="submit"
-      class="submit">SUBMIT</button>
-        </div>
+         <div class="column">
+  
+  
+      <label for="email"></label>
+        <input id="email" name="email" type="email"
+        placeholder="Email" required> 
+  
+  <div class="submit">
+    <button type="submit"
+    class="submit">SUBMIT</button>
+  </div>
         </form>
       </div>
       <br>
@@ -94,18 +99,19 @@
 
 <hr>
 <footer> 
-  <p>Viale Pasitea 172</p>
-<p>84017 Positano (SA) Italy</p>
-<p>Tel: +39 089875128</p>
+ <br>
+  <p>Viale Pasitea 172<br>
+84017 Positano (SA) Italy<br>
+Tel: +39 089875128</p>
 
 <p><a href="www.meriggiarerestaurant.com">www.meriggiarerestaurant.com</a></p>
+<br>
 
 <p><a href="#"><img src="images/facebook.svg" alt="facebook" class="facebook_img"></a>
 <a href="#"><img src="images/instagram.svg" alt="instagram" class="instagram_img"></a></p>
 
-
+<br>
 <p>© Meriggiare Inc. All rights reserved.</p>
-
 </footer>
 </body>
 </html>
