@@ -121,9 +121,11 @@ padding-left: 10px;
 
   }
   .nav {
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 16px;
     position: fixed;
-    top: 100%;
-    background-color: white;
+    top:100px;
+    background-color:#0C0E3D;
     width: 100%;
     left: -100%;
     transform: translateX(-50%);
@@ -132,8 +134,11 @@ padding-left: 10px;
     align-items: center;
     justify-content: center;
     line-height: 4rem;
+    position: fixed;
+    z-index: 2;
     
   }
+  nav a{text-decoration: none;}
 }
 .nav ul{
   flex-direction: column;
@@ -146,15 +151,9 @@ padding-left: 10px;
 
  
 
-  /*images*/
-  .header img{
-    width: 100%;
+
+ 
    
-
-
-  }
-
-
 
 
 /*buttons*/
@@ -175,7 +174,6 @@ top: 468px;
 .reservationActions{
   position: relative;
   align-items: center;
-  bottom: 0%;
 }
 
 .topbuttons {
@@ -238,11 +236,9 @@ font-weight: 400;
 font-size: 16px;
 line-height: 16px;
 justify-content: center;
-cursor: pointer;
-
-
 
 }     
+
 
 /*forms*/
 
@@ -334,6 +330,11 @@ p {
     float: none;
   
   }
+.gallery{
+  font-family: 'Tenor Sans', sans-serif;
+  text-align: center;
+  font-size: 16px;
+ }
 
 
   /*menu*/
@@ -343,20 +344,23 @@ p {
 .row-choice{
   display:flex;
 }
+
+ 
 .menu{ 
-    font-family: 'Tenor Sans', sans-serif;
     font-size: 16px;
+    
    
   }
-  .menu-title{
-    text-align: center;
-    gap: 5em;
+  .menu-item{
+    padding-left: 20px;
+    font-size: 18px;
+  
   }
 .menu-group-heading{
   padding: 1rem;
   margin:0%;
   padding-bottom: 1em;
-  font-size: 18px;
+  font-size: 24px;
   text-align: center;
 }
 
@@ -366,6 +370,7 @@ p {
   display: flex;
   grid-template-columns: 1fr;
   gap: 1em;
+  padding-left: 0px;
 }
 
 
@@ -375,14 +380,24 @@ p {
   /*Group Reservations*/
 
   .quote{
+font-family:'Arsenal', sans-serif;
 font-style: italic;
 font-size: 16px;
+padding-left: 10px;
   }
-  .reviewer{
+
+.reviewer{
+  font-family:'Arsenal', sans-serif;
   text-align: center;
+  font-size: 16px;
   }
 ul {
+  font-family:'Arsenal', sans-serif;
   font-size: 14px;
 }
-
+ .come{
+  font-family: 'Tenor Sans', sans-serif;
+  text-align: center;
+  font-size: 16px;
+ }
 
