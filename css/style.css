@@ -121,9 +121,11 @@ padding-left: 10px;
 
   }
   .nav {
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 16px;
     position: fixed;
-    top: 100%;
-    background-color: white;
+    top: 100px;
+    background-color:#0C0E3D;
     width: 100%;
     left: -100%;
     transform: translateX(-50%);
@@ -132,8 +134,10 @@ padding-left: 10px;
     align-items: center;
     justify-content: center;
     line-height: 4rem;
+    position: fixed;
     
   }
+  nav a{text-decoration: none;}
 }
 .nav ul{
   flex-direction: column;
@@ -147,14 +151,8 @@ padding-left: 10px;
  
 
   /*images*/
-  .header img{
-    width: 100%;
+ 
    
-
-
-  }
-
-
 
 
 /*buttons*/
@@ -175,7 +173,6 @@ top: 468px;
 .reservationActions{
   position: relative;
   align-items: center;
-  bottom: 0%;
 }
 
 .topbuttons {
